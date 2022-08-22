@@ -14,6 +14,9 @@
                     </li>                        
                     <li>
                         <img src = <%= post.imageUrl %> alt = "Post image">
+                        <form action="/posts/<%= post.id %>/like/" method="post">
+                            <input type="submit" name="like" value="Like!">
+                        </form>
                     </li>
                     <li>
                         <h3> liked by:</h3>
