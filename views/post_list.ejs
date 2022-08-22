@@ -8,21 +8,20 @@
         <% postList.results.forEach(function(post) {%>
             <li>
                 <ul>
-                    <li>
-                        <%= post.postedBy.username %>
-                    </li>
-                    <li>
-                        <p><%= post.message %></p> 
-                    </li>
-                    <small>
-                        <li>
-                            <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %>
-                        </li>
-                    </small>
+                    <li> 
+                        <h2><%= post.message %></h2> 
+                        <p>post by: <strong><%= post.postedBy.username %></strong> on <small> <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %></small></p>
+                    </li>                        
                     <li>
                         <img src = <%= post.imageUrl %> alt = "Post image">
                     </li>
                     <li>
+                        <h3> liked by:</h3>
+                        <p>
+                            <%= post.likedBy.map(user => user.username).concat(", ")%>
+                        </p>
+                    </li>
+                    <!-- <li>
                         <h3> liked by:</h3>
                         <% post.likedBy.forEach(function(user) {%>
                             <ul>
@@ -30,9 +29,8 @@
                                     <%= user.username %>
                                 </li>
                             </ul>
-
                         <% }); %>
-                    </li>
+                    </li> -->
                     <li>
                         <h3> disliked by:</h3>
                         <% post.dislikedBy.forEach(function(user) {%>
@@ -43,10 +41,7 @@
                             </ul>
 
                         <% }); %>
-                    </li>
-                    <li>
-                        <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %>
-                    </li>
+                    </li>                    
                     <li>
                         <%= post.userId %>
                     </li>
