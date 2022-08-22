@@ -3,13 +3,58 @@
 <%- include('_header') -%>
 <body>
 <h1>Posts</h1>
-<ol>
-    <% postList.results.forEach(function(post) {%>
-        <li>
-            <%= post.message %> - <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %>
-        </li>
-    <% }); %>
-</ol>
+<div>
+    <ol>
+        <% postList.results.forEach(function(post) {%>
+            <li>
+                <ul>
+                    <li>
+                        <%= post.postedBy.username %>
+                    </li>
+                    <li>
+                        <p><%= post.message %></p> 
+                    </li>
+                    <small>
+                        <li>
+                            <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %>
+                        </li>
+                    </small>
+                    <li>
+                        <img src = <%= post.imageUrl %> alt = "Post image">
+                    </li>
+                    <li>
+                        <h3> liked by:</h3>
+                        <% post.likedBy.forEach(function(user) {%>
+                            <ul>
+                                <li>
+                                    <%= user.username %>
+                                </li>
+                            </ul>
+
+                        <% }); %>
+                    </li>
+                    <li>
+                        <h3> disliked by:</h3>
+                        <% post.dislikedBy.forEach(function(user) {%>
+                            <ul>
+                                <li>
+                                    <%= user.username %>
+                                </li>
+                            </ul>
+
+                        <% }); %>
+                    </li>
+                    <li>
+                        <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %>
+                    </li>
+                    <li>
+                        <%= post.userId %>
+                    </li>
+                </ul>
+            </li>
+        <% }); %>
+    </ol>
+</div>
 </body>
 <%- include('_footer') -%>
 </html>
