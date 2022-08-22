@@ -5,7 +5,7 @@
 <h1>Posts</h1>
 <div>
     <ol>
-        <% postList.results.forEach(function(post) {%>
+            <% postList.results.forEach(function(post) {%>
             <li>
                 <ul>
                     <li> 
@@ -49,6 +49,14 @@
             </li>
         <% }); %>
     </ol>
+    <%if (postList.next) { %>
+        <a href="<%= postList.next %>">Next</a>
+    <% } %>
+    <%if (postList.previous) { %>
+        <a href="<%= postList.previous %>">Previous</a>
+    <% } %>
+    </body>
+    <%- include('_footer') -%>
 </div>
 </body>
 <%- include('_footer') -%>
