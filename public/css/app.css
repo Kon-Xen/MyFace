@@ -1,7 +1,10 @@
 /* Add your styles here. */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap);
+
 body {
+
     padding-top: 2rem;
-    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+    font-family: Roboto, helvetica neue;
     /*text-decoration-color: burlywood;*/
     font-style: normal;
     scroll-behavior: smooth;
@@ -9,19 +12,100 @@ body {
     background-color: #282c34;
 }
 
+header {
+
+}
+
+footer {
+    color: aliceblue;
+}
+
+.page-content {
+    margin-left: 5em;
+}
+
+nav {
+    background-color: coral;
+    height: 50px;
+}
+
+.nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-li {
+    float: left;
+    /*display: block;*/
+    /*display: inline;*/
+}
+
+.nav-li-a {
+    float: left;
+    padding: 10px;
+    /*display: block;*/
+    /*display: inline;*/
+}
+
 .post {
+    margin-left: 5em;
     padding: 5px;
-    /*color: aliceblue;*/
+    color: aliceblue;
     border-color: white;
     border-width: 5px;
+    width: 80%;
 }
 
 ol, ul {
     list-style: none;
 }
 
-.hero-image {
-    width: 100%;
-    height: auto;
+h1 {
+    color: azure;
+    font-size: 3em;
+    font-weight: 900;
+
 }
-/*}*/
+
+h2 {
+    font-size: 3em;
+    font-weight: 300;
+}
+
+h3 {
+    color: azure;
+    font-size: 3em;
+    font-weight: 400;
+
+}
+
+h4 {
+    /*font-size: 5px;*/
+    font-weight: bold;
+
+}
+
+p {
+    font-weight: 300;
+}
+
+.image-medium {
+
+}
+
+.hero-image {
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/*-------------------------------------------------------effects*/
+.fade-in {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
