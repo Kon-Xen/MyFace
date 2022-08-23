@@ -1,1 +1,259 @@
 /* Add your styles here. */
+body {
+    padding-top: 2rem;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+    /*text-decoration-color: burlywood;*/
+    font-style: normal;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    background-color: #282c34;
+}
+
+.post {
+    padding: 5px;
+    /*color: aliceblue;*/
+    border-color: white;
+    border-width: 5px;
+
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+/*!* ----------------------------------------------------------- Layout --- *!*/
+/*.wrapper {*/
+/*    min-height: 100%;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*canvas, .matrix{*/
+/*    z-Index: 0;*/
+/*    position: relative;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*}*/
+
+/*.pageContent {*/
+/*    z-Index: 3;*/
+/*    position: absolute;*/
+/*    top: 15%;*/
+/*    bottom:0 ;*/
+/*    left: 5%;*/
+/*    right: 5%;*/
+/*    flex-direction: row;*/
+/*    align-items: normal;*/
+/*    !*justify-content: center;*!*/
+/*}*/
+
+/*!* ----------------------------------------------------------- Navigation --- *!*/
+
+/*.navbar-nav{*/
+/*    !*backdrop-filter: blur(2);*!*/
+/*    font-weight: bold;*/
+/*    font-size: large;*/
+/*    text-color: #ff00cb;*/
+/*    !*font-style: initial;*!*/
+/*    -webkit-font-smoothing: subpixel-antialiased;*/
+/*}*/
+
+/*.navbar-nav .nav-link {*/
+/*    font-family: Eurostile, sans-serif;*/
+/*    font-weight: bold;*/
+/*    font-size: 20px;*/
+/*    color: aliceblue !important;*/
+/*}*/
+/*.nav-link:hover {*/
+/*    color:  #ff00cb !important;*/
+/*}*/
+
+/*.navbar-collapse{*/
+/*    color: #ff00cb !important;*/
+/*    border-color: #ff00cb!important;*/
+/*}*/
+/*.logo-hover {*/
+/*    fill: #ff00cb;*/
+/*    !*opacity: 30%;*!*/
+/*}*/
+
+/*!* ----------------------------------------------------------- Typography --- *!*/
+
+/*h1 {*/
+/*    font-family: Eurostile;*/
+/*    color: #00adef;*/
+/*    font-kerning: normal;*/
+/*}*/
+
+/*h2 {*/
+/*    color: aliceblue;*/
+/*}*/
+
+/*h3 {*/
+/*    color: #ff00cb;*/
+/*}*/
+
+/*.brand-colour{*/
+/*    color: #00adef;*/
+/*}*/
+
+/*.white {*/
+/*    color: aliceblue;*/
+/*}*/
+
+/*.pink{*/
+/*    color: #ff00cb;*/
+/*}*/
+/*.bold{*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.massive{*/
+/*    font-size: 5rem;*/
+/*}*/
+
+/*.transparent{*/
+/*    opacity: 10%;*/
+/*}*/
+
+/*.jumbo{*/
+/*    padding: 10%;*/
+/*    margin-top: 5px;*/
+/*    background-color: rgba(53,55,74,0.4);*/
+/*    color: aliceblue;*/
+/*    border:1px solid aliceblue;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+/*.statement{*/
+/*    font-style: italic;*/
+/*    align-content: center;*/
+/*    text-align: center;*/
+/*    padding: 5%;*/
+/*    margin-top: 5px;*/
+/*    margin-bottom: 2rem;*/
+/*    background-color: rgba(53,55,74,0.8);*/
+/*    color: aliceblue;*/
+/*    border:1px solid aliceblue;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+/*.box{*/
+/*    align-content: center;*/
+/*    text-align: left;*/
+/*    padding: 5%;*/
+/*    margin-top: 5px;*/
+/*    margin-bottom: 2rem;*/
+/*    background-color: rgba(53,55,74,0.4);*/
+/*    color: aliceblue;*/
+/*    !*border:1px solid aliceblue;*!*/
+/*    !*border-radius: 10px;*!*/
+/*}*/
+/*.spacer{*/
+/*    padding: 3rem;*/
+/*}*/
+
+
+/*.summaryText {*/
+/*    font-size: small;*/
+/*    color: #282c34;*/
+/*}*/
+
+/*.back{*/
+/*    !*background: #282c34;*!*/
+/*    background: #282c34;*/
+/*}*/
+
+/*.contact{*/
+/*    color: #ff00cb;*/
+/*}*/
+
+
+/*.title{*/
+/*    display: inline;*/
+/*    !*text-align: center;*!*/
+/*    !*align-content: center;*!*/
+/*}*/
+
+/*.t-16 {*/
+/*    font-size: 16px;*/
+/*}*/
+/*.t-18 {*/
+/*    font-size: 18px;*/
+/*}*/
+/*.t-20 {*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*.t-24 {*/
+/*    font-size: 24px;*/
+/*}*/
+/*.t-30 {*/
+/*    font-size: 30px;*/
+/*}*/
+
+
+/*.logo-main{*/
+/*    height: auto;*/
+/*    width:60px;*/
+/*}*/
+/*.folio-tab{*/
+/*    width: 20rem;*/
+/*}*/
+
+
+/*!* ----------------------------------------------------------- Animations --- *!*/
+
+/*.fade-in{*/
+/*    animation: fadeIn 5s;*/
+/*    -webkit-animation: fadeIn 5s;*/
+/*    -moz-animation: fadeIn 5s;*/
+/*    -o-animation: fadeIn 5s;*/
+/*    -ms-animation: fadeIn 5s;*/
+/*}*/
+
+/*.fade-in-2{*/
+/*    animation: fadeIn 15s;*/
+/*    -webkit-animation: fadeIn 15s;*/
+/*    -moz-animation: fadeIn 15s;*/
+/*    -o-animation: fadeIn 15s;*/
+/*    -ms-animation: fadeIn 15s;*/
+/*}*/
+/*.fade-in-3{*/
+/*    animation: fadeIn 25s;*/
+/*    -webkit-animation: fadeIn 25s;*/
+/*    -moz-animation: fadeIn 25s;*/
+/*    -o-animation: fadeIn 25s;*/
+/*    -ms-animation: fadeIn 25s;*/
+/*}*/
+/*@keyframes fadeIn {*/
+/*    0% {opacity:0;}*/
+/*    100% {opacity:1;}*/
+/*}*/
+
+/*@-moz-keyframes fadeIn {*/
+/*    0% {opacity:0;}*/
+/*    100% {opacity:1;}*/
+/*}*/
+
+/*@-webkit-keyframes fadeIn {*/
+/*    0% {opacity:0;}*/
+/*    100% {opacity:1;}*/
+/*}*/
+
+/*@-o-keyframes fadeIn {*/
+/*    0% {opacity:0;}*/
+/*    100% {opacity:1;}*/
+/*}*/
+
+/*@-ms-keyframes fadeIn {*/
+/*    0% {opacity:0;}*/
+/*    100% {opacity:1;}*/
+/*}*/
