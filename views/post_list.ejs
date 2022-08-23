@@ -5,7 +5,7 @@
 <h1>Posts</h1>
 <div>
     <ol>
-            <% postList.results.forEach(function(post) {%>
+        <% postList.results.forEach(function(post) {%>
             <li>
                 <ul>
                     <li> 
@@ -24,16 +24,6 @@
                             <%= post.likedBy.map(user => user.username).concat(", ")%>
                         </p>
                     </li>
-                    <!-- <li>
-                        <h3> liked by:</h3>
-                        <% post.likedBy.forEach(function(user) {%>
-                            <ul>
-                                <li>
-                                    <%= user.username %>
-                                </li>
-                            </ul>
-                        <% }); %>
-                    </li> -->
                     <li>
                         <h3> disliked by:</h3>
                         <% post.dislikedBy.forEach(function(user) {%>
