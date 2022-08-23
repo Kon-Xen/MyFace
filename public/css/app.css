@@ -21,6 +21,7 @@ footer {
 }
 
 .page-content {
+    flex: auto;
     margin-left: 5em;
 }
 
@@ -56,18 +57,16 @@ nav {
 }
 
 .nav-link {
-    float: left;
-    padding: 12px;
-    font-weight: bold;
     color: aliceblue;
-    font-size: 24px;
+    float: right;
+    padding: 14px;
+    font-weight: bold;
+    font-size: 20px;
     text-decoration: none;
 }
 
 .nav-link :hover {
-
     color: lightgrey;
-
 }
 
 .post {
@@ -149,7 +148,7 @@ a:link {
 }
 
 .hero-image {
-    width: 600px;
+    width: 400px;
     height: auto;
     border-radius: 20px;
 }
