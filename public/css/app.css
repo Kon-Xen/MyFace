@@ -58,6 +58,26 @@ nav {
     width: 80%;
 }
 
+#likey{
+    font-size: 30px;
+    border:none;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    /*opacity: 0.7;*/
+    background-color: transparent;
+}
+#likey:hover{
+    font-size: 30px;
+    border:none;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: chartreuse ;
+    /*opacity: 0.7;*/
+    background-color: transparent;
+}
 ol, ul {
     list-style: none;
 }
@@ -78,21 +98,22 @@ h3 {
     color: azure;
     font-size: 3em;
     font-weight: 400;
-
 }
 
 h4 {
-    /*font-size: 5px;*/
     font-weight: bold;
-
 }
 
 p {
     font-weight: 300;
 }
 
-.image-medium {
+a:link {
+    text-decoration: none;
+}
 
+.image-medium {
+    /* something to go here */
 }
 
 .hero-image {
@@ -101,7 +122,15 @@ p {
     border-radius: 20px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 /*-------------------------------------------------------effects*/
+
+
 .fade-in {
     animation: fadeIn 5s;
     -webkit-animation: fadeIn 5s;
