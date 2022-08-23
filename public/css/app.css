@@ -1,23 +1,29 @@
 /* Add your styles here. */
 nav {
-    background-color: darkgrey;
-    height: 10%;
+    background-color: coral;
+    height: 50px;
 }
 
-nav a {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    margin-bottom: 20px;
-}
-nav ul{
-    display: block;
+.nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 
 }
-nav li{
-    display: inline;
 
+.nav-li {
+    float: left;
+    /*display: block;*/
+    /*display: inline;*/
 }
+
+.nav-li-a {
+    float: left;
+    padding: 10px;
+    /*display: block;*/
+    /*display: inline;*/
+}
+
 
 
 body {
@@ -73,5 +79,6 @@ ol, ul {
 .hero-image {
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 /*}*/
