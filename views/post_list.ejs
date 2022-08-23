@@ -14,10 +14,17 @@
                 <small> <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %></small></p>
 
             <div class="picture-frame">
+
                 <img src="<%= post.imageUrl %>" class="hero-image" alt="Post image">
-                <form action="/posts/<%= post.id %>/like/" method="post">
-                    <input type="submit" name="like" value="Like!">
+
+                <form action="/posts/<%= post.id %>/like/" method="post" class="fa-solid fa-thumbs-up">
+                    
+                    <button>
+                        <input type="image" name="like" src="../public/assets/thumbUp.jpg">
+                    </button>
+                    
                 </form>
+            <!-- <img src="../public/assets/thumbUp.jpg"> -->
             </div>
 
 

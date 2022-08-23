@@ -2,6 +2,12 @@
 nav {
     background-color: coral;
     height: 50px;
+    /* z-index: 0; */
+
+}
+header {
+    position: sticky;
+    top: 0px
 }
 
 .nav-ul {
@@ -20,11 +26,17 @@ nav {
 .nav-li-a {
     float: left;
     padding: 10px;
+    text-decoration: none;
     /*display: block;*/
     /*display: inline;*/
 }
 
-
+.picture-frame .like-button{
+    position: relative;
+    bottom: 40px;
+    left: 20px;
+    /* z-index: 10; */
+}
 
 body {
     padding-top: 0px;
@@ -79,6 +91,8 @@ ol, ul {
 .hero-image {
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    position: relative;
+    bottom: 0px;
+    /* border-radius: 20px; */
 }
 /*}*/
