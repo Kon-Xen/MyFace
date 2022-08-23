@@ -1,1 +1,27 @@
 /* Add your styles here. */
+body {
+    padding-top: 2rem;
+    font-family: open sans,helvetica neue,Helvetica,Arial,sans-serif;
+    /*text-decoration-color: burlywood;*/
+    font-style: normal;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    background-color: #282c34;
+}
+
+.post {
+    padding: 5px;
+    /*color: aliceblue;*/
+    border-color: white;
+    border-width: 5px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+/*}*/
