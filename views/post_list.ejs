@@ -6,44 +6,50 @@
 <h1>Posts</h1>
 <div>
     <% postList.results.forEach(function(post) { %>
+
         <div class="post">
-            <ul>
-                <li>
-                    <h2><%= post.message %></h2>
-                    <p>post by: <strong><%= post.postedBy.username %></strong> on
-                        <small> <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %></small></p>
-                </li>
-                <li>
-                    <img src="<%= post.imageUrl %>" class="hero-image" alt="Post image">
-                    <form action="/posts/<%= post.id %>/like/" method="post">
-                        <input type="submit" name="like" value="Like!">
-                    </form>
-                </li>
+            
+            <h2><%= post.message %></h2>
+            <p>Posted by: <strong><%= post.postedBy.username %></strong> on
+                <small> <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %></small></p>
 
-                <li><!--      Likes       -->
-                    <h3> liked by:</h3>
+            <div class="picture-frame">
+                <img src="<%= post.imageUrl %>" class="hero-image" alt="Post image">
+                <form action="/posts/<%= post.id %>/like/" method="post">
+                    <input type="submit" name="like" value="Like!">
+                </form>
+            </div>
+
+
+            <div>
+                <div class="dropdown"><!--      Likes       -->
+                    <h3>Likes</h3>
                     <p>
-                        <%= post.likedBy.map(user => user.username).concat(", ") %>
-                    </p>
-                </li>
-
-                <li><!--     Trolls       -->
-                    <h3> disliked by:</h3>
-                    <% post.dislikedBy.forEach(function(user) { %>
-                        <ul>
-                            <li>
-                                <%= user.username %>
-                            </li>
+                        <ul class ="dropdown-content">
+                            <% post.likedBy.forEach(function(user) { %>
+                                <li>
+                                    <%= user.username %>
+                                </li>
+                            <% }); %>
                         </ul>
-
-                    <% }); %>
-                </li>
-
-                <li>
-                    <%= post.userId %>
-                </li>
-            </ul>
+                    </p>
+                </div>
+    
+                <div class="dropdown"><!--      Dislikes       -->
+                    <h3>Dislikes</h3>
+                    <p>
+                        <ul class ="dropdown-content">
+                            <% post.dislikedBy.forEach(function(user) { %>
+                                <li>
+                                    <%= user.username %>
+                                </li>
+                            <% }); %>
+                        </ul>
+                    </p>
+                </div>
+            </div>
         </div>
+
     <% }); %>
 </div>
 
