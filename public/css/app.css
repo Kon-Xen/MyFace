@@ -58,9 +58,9 @@ nav {
     width: 80%;
 }
 
-#likey{
+#likey {
     font-size: 30px;
-    border:none;
+    border: none;
     width: 50px;
     text-align: center;
     text-decoration: none;
@@ -68,16 +68,18 @@ nav {
     /*opacity: 0.7;*/
     background-color: transparent;
 }
-#likey:hover{
+
+#likey:hover {
     font-size: 30px;
-    border:none;
+    border: none;
     width: 50px;
     text-align: center;
     text-decoration: none;
-    color: chartreuse ;
+    color: chartreuse;
     /*opacity: 0.7;*/
     background-color: transparent;
 }
+
 ol, ul {
     list-style: none;
 }
@@ -126,6 +128,36 @@ a:link {
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+/* Dashed border */
+hr.dashed {
+    border-top: 3px dashed #bbb;
+    width: 80%;
+    float: left;
+}
+
+/* Dotted border */
+hr.dotted {
+    border-top: 3px dotted #bbb;
+    width: 80%;
+    float: left;
+}
+
+/* Solid border */
+hr.solid {
+
+    border-top: 1px solid #bbb;
+    width: 60%;
+    float: left;
+}
+
+/* Rounded border */
+hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+    width: 80%;
+    float: left;
 }
 
 /*-------------------------------------------------------effects*/
