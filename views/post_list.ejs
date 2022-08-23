@@ -20,51 +20,65 @@
                     <p>post by: <strong><%= post.postedBy.username %></strong> on
                         <small> <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %></small>
                     </p>
+                </div>
+
+                <div><!--      Like section       -->
 
                     <form action="/posts/<%= post.id %>/like/" method="post">
                         <button id="likey" type="submit" class="fa fa-thumbs-o-up"></button>
                     </form>
-                </div>
 
                 <!--      Likes       -->
-                <div>
+                <div class="dropdown">
+                    <h5 class="dropbtn"> liked by </h5>
                     <p>
-                        <strong> liked by: </strong>
-                        <%= post.likedBy.map(user => user.username).concat(" , ") %>
+                    <ul class="dropdown-content">
+                        <% post.likedBy.forEach(function(user) { %>
+                            <li>
+                                <%= user.username %>
+                            </li>
+                        <% }); %>
+                    </ul>
                     </p>
                 </div>
 
                 <!--     Trolls       -->
-                <div>
+                <div class="dropdown">
+                    <h5 class="dropbtn"> Unliked by </h5>
                     <p>
-                        <strong> Dis-liked by: </strong>
+                    <ul class="dropdown-content">
                         <% post.dislikedBy.forEach(function(user) { %>
-                    <ul>
-                        <li>
-                            <%= user.username %>
-                        </li>
+                            <li class="dropdown-content-item">
+                                <%= user.username %>
+                            </li>
+                        <% }); %>
                     </ul>
-                    <% }); %>
                     </p>
+                </div>
                 </div>
 
                 <%= post.userId %>
             </div>
             <hr class="solid">
         <% }); %>
-    </div>
 
-    <div><!--      bottom Nav       -->
-        <% if (postList.next) { %>
-            <a href="<%= postList.next %>">Next</a>
-        <% } %>
-        <% if (postList.previous) { %>
-            <a href="<%= postList.previous %>">Previous</a>
-        <% } %>
     </div>
+    <nav class="bottom-Nav"><!--  bottom Nav  -->
+        <ul class="">
+            <li class="bottom-Nav-link">
+                <% if (postList.previous) { %>
+                    <a href="<%= postList.previous %>">Previous</a>
+                <% } %>
+            </li>
+            <li class="bottom-Nav-link">
+                <% if (postList.next) { %>
+                    <a  href="<%= postList.next %>">Next</a>
+                <% } %>
+            </li>
+        </ul>
+    </nav>
 </div>
-
-
 </body>
+
 <%- include('_footer') -%>
 </html>
