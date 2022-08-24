@@ -61,6 +61,10 @@ h1 {
     color: grey;
     padding-left: calc(7% + 2px);
 }
+.page-contents{
+    /*padding: 300px;*/
+    /*align-items: center;*/
+}
 
 .title{
     margin:0;
@@ -73,7 +77,9 @@ h1 {
 .post {
     max-width:600px;
     padding: 2%;
-    margin: 5%;
+    margin-top:15px;
+    margin-left: auto;
+    margin-right:auto;
     border: 2px solid grey;
     background-color: white;
 }
