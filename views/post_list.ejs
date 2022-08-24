@@ -3,13 +3,13 @@
 <%- include('_header') -%>
 <body>
 
-<h1>Posts</h1>
+
 <div>
     <% postList.results.forEach(function(post) { %>
 
         <div class="post">
             
-            <h2><%= post.message %></h2>
+            <h2 class="title"><%= post.message %></h2>
 
             <p>Posted by: <strong><%= post.postedBy.username %></strong> on
             <small> <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %></small></p>
@@ -27,8 +27,8 @@
 
             <div class="likesanddislikes">
                 <div class="dropdown"><!--      Likes       -->
-                    <p>Likes</p>
-                    <p>
+                    Likes
+<!--                    <p>-->
                         <ul class ="dropdown-content">
                             <% post.likedBy.forEach(function(user) { %>
                                 <li>
@@ -36,11 +36,11 @@
                                 </li>
                             <% }); %>
                         </ul>
-                    </p>
+<!--                    </p>-->
                 </div>
     
                 <div class="dropdown"><!--      Dislikes       -->
-                    <p>Dislikes</p>
+                    Dislikes
                     <!-- <p> -->
                         <ul class ="dropdown-content">
                             <% post.dislikedBy.forEach(function(user) { %>
@@ -53,8 +53,8 @@
                 </div>
             </div>
         </div>
-
     <% }); %>
+
 </div>
 
 <div><!--      bottom Nav       -->
