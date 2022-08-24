@@ -47,6 +47,7 @@ header {
 }
 
 body {
+    margin:0;
     padding-top: 0px;
     font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
     /*text-decoration-color: burlywood;*/
