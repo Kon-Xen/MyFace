@@ -16,21 +16,17 @@
             <div class="picture-frame">
 
                 <img src="<%= post.imageUrl %>" class="hero-image" alt="Post image">
-
-                <form action="/posts/<%= post.id %>/like/" method="post" class="fa-solid fa-thumbs-up">
                     
-                    <button>
-                        <input type="image" name="like" src="../public/assets/thumbUp.jpg">
-                    </button>
-                    
+                <form id="likey" action="/posts/<%= post.id %>/like/" method="post">
+                    <button id="likeyButton" type="submit" class="fa fa-thumbs-o-up"></button>
                 </form>
-            <!-- <img src="../public/assets/thumbUp.jpg"> -->
+                    
             </div>
 
 
-            <div>
+            <div class="likesanddislikes">
                 <div class="dropdown"><!--      Likes       -->
-                    <h3>Likes</h3>
+                    <p>Likes</p>
                     <p>
                         <ul class ="dropdown-content">
                             <% post.likedBy.forEach(function(user) { %>
@@ -43,8 +39,8 @@
                 </div>
     
                 <div class="dropdown"><!--      Dislikes       -->
-                    <h3>Dislikes</h3>
-                    <p>
+                    <p>Dislikes<p>
+                    
                         <ul class ="dropdown-content">
                             <% post.dislikedBy.forEach(function(user) { %>
                                 <li>
