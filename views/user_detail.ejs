@@ -2,7 +2,16 @@
     <%- include('_head') -%>
     <%- include('_header') -%>
     <body>
-    <h1><%= name %></h1>
+    <div style='background-image:url("<%= coverImageUrl %>");' class="user-details">
+        <h1><%= name %></h1>
+        <img src="<%= profileImageUrl %>" id="profile-picture">
+        <p>
+            <%= username %> <br>
+            <%= email %>
+        </p>
+        <img src="<%= coverImageUrl %>" id="profile-picture">
+    </div>
+
     </body>
     <%- include('_footer') -%>
 </html>

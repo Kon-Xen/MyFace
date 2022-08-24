@@ -25,7 +25,11 @@ header {
     /*display: inline;*/
 }
 
-a {
+a{
+    color:  coral
+}
+
+nav a {
     text-decoration: none;
     color:  #282c34
 }
@@ -72,10 +76,7 @@ h1 {
     color: grey;
     padding-left: calc(7% + 2px);
 }
-.page-contents{
-    /*padding: 300px;*/
-    /*align-items: center;*/
-}
+
 
 .title{
     margin:0;
@@ -95,12 +96,48 @@ h1 {
     background-color: white;
 }
 
+.user-details {
+    height: 33vh;
+    position:relative;
+    max-width:600px;
+    padding: 2%;
+    margin-top:15px;
+    margin-left: auto;
+    margin-right:auto;
+    border: 2px solid grey;
+    background-color: white;
+}
+
+.user-details h1{
+
+    padding: 0;
+    font-family:'Aboreto', cursive;
+    position: absolute;
+    bottom: 50px;
+    left: 25%;
+
+}
+
+#profile-picture{
+    position: absolute;
+    bottom: 0;
+    left: 3%;
+    width: 100px;
+    border-radius: 50%;
+    border: 4px solid #282c34;
+}
+
+.user-details p{
+
+    position: absolute;
+    bottom: 15px;
+    left: 25%;
+}
+
 .likesanddislikes {
     font-weight: bold;
     font-size: 2vw;
     margin-right: 5px;
-
-
 }
 
 .dropdown {
