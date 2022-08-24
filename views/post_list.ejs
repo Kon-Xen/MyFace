@@ -10,8 +10,9 @@
         <div class="post">
             
             <h2><%= post.message %></h2>
+
             <p>Posted by: <strong><%= post.postedBy.username %></strong> on
-                <small> <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %></small></p>
+            <small> <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %></small></p>
 
             <div class="picture-frame">
 
@@ -39,8 +40,8 @@
                 </div>
     
                 <div class="dropdown"><!--      Dislikes       -->
-                    <p>Dislikes<p>
-                    
+                    <p>Dislikes</p>
+                    <!-- <p> -->
                         <ul class ="dropdown-content">
                             <% post.dislikedBy.forEach(function(user) { %>
                                 <li>
@@ -48,7 +49,7 @@
                                 </li>
                             <% }); %>
                         </ul>
-                    </p>
+                    <!-- </p> -->
                 </div>
             </div>
         </div>
