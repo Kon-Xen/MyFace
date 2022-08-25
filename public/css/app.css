@@ -120,7 +120,6 @@ h1 {
     padding: 0;
     font-family:'Aboreto', cursive;
     margin-bottom:0;
-
 }
 
 #profile-picture{
@@ -133,7 +132,6 @@ h1 {
 
 .user-details p{
     margin-top:0;
-
 }
 
 .likesanddislikes {
@@ -219,7 +217,6 @@ ol, ul {
 @media (min-width: 450px) {
 
     #likeyButton {
-
         display: inline-flex;
         border: none;
         text-align: center;
@@ -229,18 +226,17 @@ ol, ul {
         margin-bottom: 0px;
         background-color: transparent;
         font-size: 5vw;
-
-
     }
 }
 
 /* ---------------------------------  Mobile Navigation */
-@media screen and (min-width: 480px) {
-    .hide_on_desktop {
-      display: none;
-    }
-  }
 
+@media only screen and (min-device-width: 480px){
+    .hide_on_desktop {
+        display: none;
+      }
+    }
+    
   
 .nav-li-hamburger{
     position: relative;
@@ -279,12 +275,10 @@ ol, ul {
 }
 
 .hamburger-dropdown a{
-
     display:block;
     background-color: white;
     text-align: right;
     font-size:20;
     white-space: nowrap;
     overflow:hidden;
-
 }
