@@ -3,13 +3,22 @@
     <%- include('_header') -%>
     <body>
     <div style='background-image:url("<%= coverImageUrl %>");' class="user-details">
-        <h1><%= name %></h1>
-        <img src="<%= profileImageUrl %>" id="profile-picture">
-        <p>
-            <%= username %> <br>
-            <%= email %>
-        </p>
-        <img src="<%= coverImageUrl %>" id="profile-picture">
+        
+        <div class="transparent-box">
+            
+            <img src="<%= profileImageUrl %>" id="profile-picture">
+            
+            <div>
+                <h1><%= name %></h1>
+
+                <p>
+                    <%= username %> <br>
+                    <%= email %>
+                </p>
+                
+            </div>
+
+        </div>
     </div>
 
     </body>

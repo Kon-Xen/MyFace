@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 /* Add your styles here. */
+*{
+    outline: 1px solid red;
+}
+
 nav {
     background-color: coral;
     height: 50px;
@@ -106,32 +110,30 @@ h1 {
     margin-right:auto;
     border: 2px solid grey;
     background-color: white;
+    background-size:cover;
+    opacity:0.8;
+    color:white;
 }
 
 .user-details h1{
-
+    color:white;
     padding: 0;
     font-family:'Aboreto', cursive;
-    position: absolute;
-    bottom: 50px;
-    left: 25%;
+    margin-bottom:0;
 
 }
 
 #profile-picture{
-    position: absolute;
-    bottom: 0;
-    left: 3%;
+    margin-right:20px;
+    margin-left:20px;
     width: 100px;
     border-radius: 50%;
-    border: 4px solid #282c34;
+    border: 3px solid white;
 }
 
 .user-details p{
+    margin-top:0;
 
-    position: absolute;
-    bottom: 15px;
-    left: 25%;
 }
 
 .likesanddislikes {
@@ -178,6 +180,16 @@ ol, ul {
     /* border-radius: 20px; */
 }
 
+.transparent-box{
+    display: flex;
+    position: absolute;
+    bottom: -60;
+    left: 0;
+    align-items: center;
+    width: 100%;
+    background-color: #282c3480;
+}
+
 #likey {
     position: absolute;
     left: 4vw;
@@ -222,4 +234,19 @@ ol, ul {
 
 
     }
+}
+
+.nav-li-hamburger{
+    padding:9px;
+    float: right;
+    text-decoration: none;
+    font-family:'Aboreto', cursive;
+    font-weight:800;
+    color:  #282c34
+}
+.hamburger {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 5px 0;
 }
