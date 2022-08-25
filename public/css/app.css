@@ -120,7 +120,6 @@ h1 {
     padding: 0;
     font-family:'Aboreto', cursive;
     margin-bottom:0;
-
 }
 
 #profile-picture{
@@ -133,7 +132,6 @@ h1 {
 
 .user-details p{
     margin-top:0;
-
 }
 
 .likesanddislikes {
@@ -160,7 +158,6 @@ h1 {
     padding: 5px 5px;
     z-index: 1;
 }
-
 
 
 .dropdown:hover .dropdown-content {
@@ -220,7 +217,6 @@ ol, ul {
 @media (min-width: 450px) {
 
     #likeyButton {
-
         display: inline-flex;
         border: none;
         text-align: center;
@@ -230,13 +226,19 @@ ol, ul {
         margin-bottom: 0px;
         background-color: transparent;
         font-size: 5vw;
-
-
     }
 }
 
-.nav-li-hamburger{
+/* ---------------------------------  Mobile Navigation */
 
+@media only screen and (min-device-width: 480px){
+    .hide_on_desktop {
+        display: none;
+      }
+    }
+    
+  
+.nav-li-hamburger{
     position: relative;
     padding:9px;
     float: right;
@@ -253,12 +255,11 @@ ol, ul {
 }
 
 #hamburger-button{
+    /* display: none; */
     float:right;
-
 } 
 
 .hamburger-dropdown {
-
     position: absolute;
     top:51px;
     right:0px;
@@ -267,7 +268,6 @@ ol, ul {
 
 .hamburger-dropdown.closed{
     display:none;
-
 }
 
 .hamburger-dropdown.open{
@@ -275,12 +275,10 @@ ol, ul {
 }
 
 .hamburger-dropdown a{
-
     display:block;
     background-color: white;
     text-align: right;
     font-size:20;
     white-space: nowrap;
     overflow:hidden;
-
 }
