@@ -22,14 +22,18 @@ document.addEventListener("DOMContentLoaded", function () {
   hamburgerButton.addEventListener("click", ()=>{
 
     if (hamburgerDropdownLinks[0].className === "hamburger-dropdown open"){
-      hamburgerDropdownLinks[0].className = "hamburger-dropdown closed"
+      hamburgerDropdownLinks[0].className = "hamburger-dropdown closed";
     }
     else if (hamburgerDropdownLinks[0].className === "hamburger-dropdown closed"){
-      hamburgerDropdownLinks[0].className = "hamburger-dropdown open"
+      hamburgerDropdownLinks[0].className = "hamburger-dropdown open";
     }
-
-
     ;
   });
+
+  // const windowWidth = window.innerWidth;
+  // make an event sub to puicjk up the sizing of the window
+  // and hide or close the button.
+  // OR#
+  // CSS it instead
 
 });

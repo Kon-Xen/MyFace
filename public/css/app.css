@@ -162,7 +162,6 @@ h1 {
 }
 
 
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -235,8 +234,15 @@ ol, ul {
     }
 }
 
-.nav-li-hamburger{
+/* ---------------------------------  Mobile Navigation */
+@media screen and (min-width: 480px) {
+    .hide_on_desktop {
+      display: none;
+    }
+  }
 
+  
+.nav-li-hamburger{
     position: relative;
     padding:9px;
     float: right;
@@ -253,12 +259,11 @@ ol, ul {
 }
 
 #hamburger-button{
+    /* display: none; */
     float:right;
-
 } 
 
 .hamburger-dropdown {
-
     position: absolute;
     top:51px;
     right:0px;
@@ -267,7 +272,6 @@ ol, ul {
 
 .hamburger-dropdown.closed{
     display:none;
-
 }
 
 .hamburger-dropdown.open{
