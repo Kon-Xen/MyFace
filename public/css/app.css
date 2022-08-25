@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 /* Add your styles here. */
-*{
-    outline: 1px solid red;
-}
+
 
 nav {
     background-color: coral;
@@ -101,6 +99,7 @@ h1 {
 }
 
 .user-details {
+    border: 1px solid coral;
     height: 33vh;
     position:relative;
     max-width:600px;
@@ -108,7 +107,7 @@ h1 {
     margin-top:15px;
     margin-left: auto;
     margin-right:auto;
-    border: 2px solid grey;
+
     background-color: white;
     background-size:cover;
     opacity:0.8;
@@ -116,6 +115,7 @@ h1 {
 }
 
 .user-details h1{
+    border: 1px solid coral;
     color:white;
     padding: 0;
     font-family:'Aboreto', cursive;
@@ -132,6 +132,7 @@ h1 {
 }
 
 .user-details p{
+    border: 1px solid coral;
     margin-top:0;
 
 }
@@ -180,10 +181,11 @@ ol, ul {
 }
 
 .transparent-box{
+    border: 1px solid coral;
     display: flex;
     position: absolute;
     bottom: -60;
-    left: 0;
+    left: -1;
     align-items: center;
     width: 100%;
     background-color: #282c3480;
